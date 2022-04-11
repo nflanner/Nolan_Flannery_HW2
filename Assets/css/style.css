@@ -1,27 +1,38 @@
+:root {
+    --background: #33493D;
+    --bright-turquoise: #2aefcb;
+    --secondary-color: #a9f9e0;;
+    --text2: black;
+}
+
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    color: #ffffff;
+    background-color: var(--background);
 }
 
 main {
-    background-color: #d9dcd6;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
     color: #ffffff;
 }
 
 h1 {
+    flex-wrap: wrap;
     display: inline-block;
     font-size: 48px;
     color: #d9dcd6;
 }
 
 nav {
+    flex-wrap: wrap;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -38,11 +49,6 @@ li {
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 p {
     font-size: 16px;
 }
@@ -50,8 +56,8 @@ p {
 figure {
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    margin: 0;
+    background-image: url("../images/seattle.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -69,66 +75,58 @@ figure {
 content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin: 5px;
+    padding: 5px
 }
 
 aside {
-    margin-right: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 5px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit {
-    margin-bottom: 32px;
-    color: #ffffff;
+    border: 5px solid var(--secondary-color);
+    border-radius: 0 20px 20px 0;
 }
 
 h3 {
-    margin-bottom: 10px;
     text-align: center;
-}
-
-.benefit img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-content div {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-content div img {
-    max-height: 200px;
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin: 20px;
     font-size: 36px;
 }
 
+/* make main flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+    height: 400px;
+  }
+
+  /* start with largest screen size for columns */
+.info {
+    flex: 1 0 70%;
+    padding: 5px 5px 5px 5px;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin: 5px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 20px 0 0 20px;
+  }
+
 .footer {
-    padding: 30px;
+    height: 15%;
+    width: 100%;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.footer h2 {
-    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 10px;
 }
