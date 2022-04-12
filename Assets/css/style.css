@@ -69,7 +69,7 @@ figure {
     height: 800px;
     flex: 1 1 100%;
     margin: 0;
-    background-image: url("../images/seattle.jpg");
+    background-image: url("../Images/seattle.jpg");
     background-size: cover;
     /* background-position: left; */
 }
