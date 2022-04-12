@@ -40,20 +40,25 @@ nav {
     font-size: 20px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    border: 3px solid #ffffff;
+nav ul li a {
+    border: 1px solid #ffffff;
+    padding: 3px;
     border-radius: 5px;
     text-decoration: none;
     margin-right: 5px;
+}
+
+nav ul li a:hover {
+  box-shadow: inset 0px 0px 8px var(--secondary-color), 0 0 15px var(--secondary-color);
 }
 
 p {
@@ -84,6 +89,10 @@ content {
     display: inline-block;
     margin: 5px;
     padding: 5px
+}
+
+content ul li {
+    font-size: 20px;
 }
 
 aside {
@@ -143,12 +152,13 @@ h2 {
     .info {
       flex: 0 1 50%;
       max-width: 50%;
-      min-width: 200px;
+      min-width: 285px;
     }
   }
 
   aside {
     height: 30%;
+    min-width: 175px;
 }
   
   /* media query for larger screens */
@@ -157,11 +167,12 @@ h2 {
     .info {
       flex: 0 0 100%;
       max-width: 100%;
-      min-width: 200px;
+      min-width: 285px;
     }
 
     aside {
         height: 30%;
+        min-width: 175px;
     }
   }
     
