@@ -19,9 +19,16 @@ main {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
+}
+
+header img {
+    margin: 0;
+    display: block;
+    height: 100px;
+    width: auto;
 }
 
 h1 {
@@ -33,7 +40,7 @@ h1 {
 
 nav {
     flex-wrap: wrap;
-    padding-top: 15px;
+    padding-top: 0px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -51,7 +58,15 @@ nav ul li {
 
 nav ul li a {
     border: 1px solid #ffffff;
-    padding: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+nav ul li img {
+    border: 1px solid #ffffff;
+    padding: 5px;
     border-radius: 5px;
     text-decoration: none;
     margin-right: 5px;
@@ -161,6 +176,20 @@ div content img:hover {
     display: block;
     height: 600px;
     width: auto;
+}
+
+#subsequent-app {
+    width: 49%;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px
+}
+
+#subsequent-app img {
+    margin: auto;
+    display: block;
+    height: 200px;
+    width: 400px;
 }
 
 /* using a laptop-first approach, use `min-width` values going from narrow -> wide for a responsive design */
