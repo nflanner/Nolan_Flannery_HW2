@@ -156,6 +156,8 @@ div content img:hover {
 
 .container {
     position: relative;
+    justify-content: center;
+    text-align: center;
 }
 
 /* make hover titles for the images */
